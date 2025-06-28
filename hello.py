@@ -1,5 +1,9 @@
-# My first Git-tracked Python script for CST 205
+# Updated hello.py that imports a list from another file
+from facts import fun_facts
+
 def say_hello():
-    print("Hi there! I'm learning Git and Python at the same time :)")
+    print("Hey there! Time for some fun facts:\n")
+    for fact in fun_facts:
+        print("-", fact)
 
 say_hello()
